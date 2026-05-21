@@ -1,1 +1,113 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
+body{
+  font-family:Arial,sans-serif;
+  background:#ffffff;
+  color:#111111;
+}
+
+a{
+  text-decoration:none;
+}
+
+.app{
+  width:100%;
+  min-height:100vh;
+}
+
+.hero{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+  background:
+  radial-gradient(circle at top right,#7c3aed22,transparent 30%),
+  #ffffff;
+}
+
+.hero-content{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+
+.hero-badge{
+  background:#f3e8ff;
+  color:#7c3aed;
+  padding:10px 18px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:24px;
+}
+
+.hero h1{
+  font-size:56px;
+  line-height:1.1;
+  max-width:850px;
+  font-weight:800;
+  margin-bottom:24px;
+}
+
+.hero-description{
+  font-size:20px;
+  line-height:1.7;
+  max-width:750px;
+  color:#555555;
+  margin-bottom:40px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.primary-btn{
+  background:#7c3aed;
+  color:#ffffff;
+  padding:18px 34px;
+  border-radius:14px;
+  font-weight:700;
+  transition:0.3s;
+}
+
+.primary-btn:hover{
+  opacity:0.9;
+}
+
+.secondary-btn{
+  background:#ffffff;
+  color:#111111;
+  border:1px solid #dddddd;
+  padding:18px 34px;
+  border-radius:14px;
+  font-weight:700;
+}
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .hero-description{
+    font-size:17px;
+  }
+
+  .primary-btn,
+  .secondary-btn{
+    width:100%;
+  }
+
+}
